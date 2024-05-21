@@ -1,0 +1,573 @@
+/*--title--*/
+
+@font-face {
+    font-family: "Bauhaus";
+    src: url("/font/Bauhaus.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "bettynoir";
+    src: url("/font/bettynoir.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "RIALTO";
+    src: url("/font/RIALTO.TTF") format("opentype");
+  }
+  @font-face {
+    font-family: "Glockenspiel";
+    src: url("/font/Glockenspiel.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "martina";
+    src: url("/font/martina.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "Moebius";
+    src: url("/font/Moebius.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "Noviembre";
+    src: url("/font/Noviembre.TTF") format("opentype");
+  }
+  @font-face {
+    font-family: "Retrocircular";
+    src: url("/font/Retrocircular.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "Stanley";
+    src: url("/font/Stanley.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Verve";
+    src: url("/font/Verve.ttf") format("opentype");
+  }
+
+
+  /*--classic font--*/
+
+  @font-face {
+    font-family: "Eight";
+    src: url("/font/Eight.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "Espera";
+    src: url("/font/Espera.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "Gatha";
+    src: url("/font/Gatha.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Gogh";
+    src: url("/font/Gogh.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "Larke";
+    src: url("/font/Larke.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "Sansation";
+    src: url("/font/Sansation.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "Valak";
+    src: url("/font/Valak.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "coolvetica";
+    src: url("/font/coolvetica.otf") format("opentype");
+  }
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+
+/*--tete de page--*/
+header{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0,5s;
+  background-color: rgb(24, 24, 24);
+}
+
+
+
+
+
+
+/*--menu de navigation--*/
+.nom{
+  color: whitesmoke;
+  font-size: 35px;
+  justify-content: center;
+  width: 300px;
+  font-family: "Stanley";
+  font-weight: 0 auto;
+  text-decoration: none;
+}
+
+.nav{
+  display: flex;
+  position: relative;
+}
+.nav li{
+  list-style: none;
+  margin-right: 70px;
+  font-size: 20px;
+}
+.nav a{
+  color: whitesmoke;
+  text-decoration: none;
+  margin-left: 100px;
+  font-family: Gatha;
+  letter-spacing: 1px;
+}
+
+header .nav li a:hover{
+  color:rgb(122, 122, 122);
+}
+
+
+
+
+
+/*--page de bievenue--*/
+.bannière{
+  position: relative;
+  background-color: rgb(24, 24, 24);
+  background-size: cover;
+}
+
+.bannière .contenu {
+  text-align: center;
+  margin-top: 10%;
+  margin-right: 5%;
+}
+
+.contenu .name {
+  color: whitesmoke;
+  font-size: 130px;
+  font-family: Stanley;
+}
+
+.bannière .contenu .date {
+  color: whitesmoke;
+  font-size: 60px;
+  font-family: Stanley;
+}
+
+
+
+
+
+
+/*--menu--*/
+
+.menu{
+  background-color: rgb(24, 24, 24);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 80px;
+}
+.image-container5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 55px 55px;
+}
+.image-items6 {
+  position: relative;
+  width: 500px;
+  height: auto;
+}
+.image-items6 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay .text {
+  color: whitesmoke;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Gatha;
+}
+
+
+
+
+
+/*--À propos--*/
+
+section{
+  padding-top: 180px;
+  padding-left: 80px;
+  background-color: rgb(24, 24, 24);
+  min-height: 100vh;
+  background-size: cover;
+}
+.row{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row .texte{
+  position: relative;
+  width: 40%;
+  justify-content: center;
+  align-items: center; 
+  letter-spacing: 1px;
+}
+.portrait img{
+  width: 750px;
+  margin-left: 730px;
+  margin-top: -300px;
+}
+.apropos {
+  margin-bottom: 30px;
+  font-family: Gatha;
+  font-size: 40px;
+  color: whitesmoke;
+  
+}
+.jesuis {
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: Gatha;
+  margin-top: 100px;
+  
+}
+
+
+
+
+
+
+/*--page-graphisme--*/
+
+section .page1{
+  background-color: rgb(24, 24, 24);
+
+}
+
+.image-container1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-right: 45px;
+  object-fit: cover;
+}
+
+.image-item img {
+  width: 200px;
+  height: auto;
+}
+.image-container1 p{
+  font-size: 25px;
+  color: whitesmoke;
+  font-family: Gatha;
+  padding-top: 3vh;
+}
+
+
+
+
+
+/*--page peintures--*/
+
+section.page2{
+  background-color: rgb(24, 24, 24);
+  padding-bottom: 50px;
+}
+.image-container2 p{
+  font-size: 30px;
+  color: whitesmoke;
+  font-family: Gatha;
+  padding-bottom: 10vh;
+}
+
+.image-container2 img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+}
+.image-items-artifice{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px; 
+  justify-items: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-bottom: 20vh;
+}
+.image-items-lamp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 0px; 
+  justify-items: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-bottom: 20vh;
+}
+.image-items-lune {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 60px; 
+  justify-items: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-bottom: 20vh;
+}
+
+
+.image-items-verre{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px 0px; 
+  justify-items: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-right: 20px;
+}
+
+
+
+
+
+
+
+/*--page créations 3D--*/
+section.page3{
+  background-color: rgb(24, 24, 24);
+}
+.titre h1{
+  font-size: 30px;
+  color: whitesmoke;
+  font-family: Gatha;
+  padding-bottom: 70px;
+}
+.image-items-bâtiment{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px; 
+  justify-items: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-bottom: 20vh;
+  padding-right: 30px;
+}
+.image-items-cocktail{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px; 
+  justify-items: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-bottom: 20vh;
+  padding-right: 30px;
+}
+.image-container4 img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+}
+.image-container4 p{
+  font-size: 30px;
+  color: whitesmoke;
+  font-family: Gatha;
+}
+
+
+
+
+
+
+/*--page photos--*/
+
+
+section.page4{
+  background-color: rgb(24, 24, 24);
+}
+
+.image-items-bleu{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px; 
+  justify-items: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-bottom: 20vh;
+  padding-right: 30px;
+}
+.image-items-bleu img {
+  width: 530px;
+  height: auto;
+}
+.petit img {
+  width: 550px;
+  height: auto;
+}
+.grand img {
+  width: 450px;
+  height: auto;
+}
+.image-items-france{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px; 
+  justify-items: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-bottom: 20vh;
+  padding-right: 40px;
+}
+.image-items-cepv{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px; 
+  justify-items: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-bottom: 20vh;
+  padding-right: 40px;
+}
+.image-items-chili{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px; 
+  justify-items: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-bottom: 20vh;
+  padding-right: 40px;
+}
+.image-container3 p{
+  font-size: 30px;
+  color: whitesmoke;
+  font-family: Gatha;
+}
+
+
+
+
+
+/*--contact--*/
+
+body.formulaire-contact{
+  background-color: rgb(24, 24, 24);
+}
+section.Contact{
+  position: absolute;
+  top: 60%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  font-family: Gatha;
+}
+form{
+  background-color: whitesmoke;
+  padding: 50px;
+  border-radius: 15px;
+}
+form h1{
+  font-size: 30px;
+}
+form .ligne{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(24, 24, 24);
+}
+form .corps-formulaire{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+form .corps-formulaire .groupe{
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+form .corps-formulaire .gauche .groupe input{
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #242424;
+  outline: none;
+  border-radius: 5px;
+}
+form .corps-formulaire .gauche .groupe i{
+  position: absolute;
+  left: 0%;
+  top: 25px;
+  padding: 9px 8px;
+  color: #242424;
+}
+form .corps-formulaire .droite {
+  margin-left: 40px;
+}
+form .corps-formulaire .droite .groupe {
+  height: 100%;
+}
+form .corps-formulaire .droite .groupe textarea{
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #242424;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 72%;
+}
+form .pied-formulaire input{
+  margin-top: 10px;
+  background-color: white;
+  color: #242424;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #242424;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+form .pied-formulaire button:hover{
+  transform: scale(1.05);
+}
+
+

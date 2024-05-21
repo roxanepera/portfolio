@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio Roxane Pera</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body class="formulaire-contact">
+    <header>
+        <a href="#" class="nom">ROXANE PERA</a>
+        <ul class="nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Projets</a></li>
+            <li><a href="À propos.html">À propos</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section class="Contact">
+        <form action="contact.php" class="form">
+            <h1>Contactez-moi</h1>
+            <div class="ligne"></div>
+            <div class="corps-formulaire">
+                <div class="gauche">
+                    <div class="groupe">
+                        <label>Votre nom</label>
+                        <input type="text" name="lastname" id="firstname" placeholder="Nom" required>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="groupe">
+                        <label>Votre adresse e-mail</label>
+                        <input type="text" name="e-mail" id="e-mail" placeholder="E-mail" required>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="droite">
+                    <div class="groupe">
+                        <label>Message</label>
+                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="pied-formulaire" align="center">
+                <input type="submit" value="Envoyer votre message">
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>
